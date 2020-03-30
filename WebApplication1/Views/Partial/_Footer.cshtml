@@ -1,0 +1,45 @@
+﻿<footer class="footer mt-2"></footer>
+
+
+<!-- Add modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header p-1 pl-3">
+                <h5 class="modal-title" id="exampleModalLongTitle"> İcon yüklə </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="d-flex form" data-save-url="@Url.Action("AddIcon","Home")"  data-edit-url="@Url.Action("EditIcon","Home")">
+                    <div class="upload-icon w-50 mr-4"> <img src="~/icons/upload.png" /> </div>
+                    <input type="file" class="send-img" />
+                    <div class="upload-form w-100">
+                        <div class="form-group">
+                            <input type="text" placeholder="icon adı" class="send-icon" />
+                            <input type="text" class="send-icon-id d-none" />
+                        </div>
+                        <div class="form-group">
+                            <label for="filled">Filled</label>
+                            <input type="radio" class="check_filled" value="filled" checked="checked" id="filled" name="type" />
+                            <label for="outlined">Outlined</label>
+                            <input type="radio" class="check_outlined" value="outlined" id="outlined" name="type" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="taglar" class="send-tags" />
+                        </div>
+                        <ul class="tag-list"></ul>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer p-1">
+                <div class="error-text text-danger mr-4 font-weight-bold"></div>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Bağla</button>
+                <button type="button" class="btn btn-primary save">Göndər</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="module" src="~/js/form.js"></script>

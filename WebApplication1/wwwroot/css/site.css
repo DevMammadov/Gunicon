@@ -1,0 +1,146 @@
+﻿body {
+    background: #FCFCFC;
+}
+
+.icon {
+    height: 100px;
+    width: 80px;
+    padding: 10px;
+    margin-right: 16.5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    /*background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);*/
+    /*transition: box-shadow .3s linear 0s;*/
+}
+
+.icon img{
+    height: 60px;
+    width: 60px;
+    margin-bottom: 5px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.icon span{
+    display: block;
+    max-width: 100px;
+}
+
+.icon:hover {
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+}
+
+.selected-icon-edit,
+.selected-icon-info,
+.selected-icon-name,
+.selected-icon-code,
+.selected-icon { 
+    width: 100%;
+    color: rgba(23, 23, 23, 0.75);
+    font-weight: bold;
+}
+
+.aside {
+    border-right: 2px solid #DDDDDD;
+}
+
+.selected-icon {
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+}
+
+.selected-icon object {
+    width: 180px;
+    height: 180px;
+}
+
+.selected-icon-name {
+    border-radius: 5px;
+    height: 25px;
+    margin-top: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.selected-icon-info {
+    margin-top: 10px;
+    height: 130px;
+    padding: 5px;
+    font-size: 15px;
+    position: relative;
+}
+ 
+
+.search {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #b5b5b5;
+    outline: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: #2F4163;
+    padding-left: 10px;
+}
+
+.search::placeholder {
+    color: #e6e9f0;
+}
+
+.send-img{
+    display: none;
+}
+
+.tag-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 300px;
+}
+
+.tag-list li {
+    padding: 0 10px;
+    background: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    margin: 5px;
+    cursor: pointer;
+}
+
+.upload-icon {
+    height: 150px;
+    width: 150px;
+    background: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.upload-icon img{
+    width: 100%;
+    height: 100%;
+}
+
+footer{
+    position: fixed;
+    bottom: 10px;
+}
+
+.btn-primary {
+    background: #2B78FE;
+}
+
+.btn-logout{
+    display: none;
+}
